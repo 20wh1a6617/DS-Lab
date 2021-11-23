@@ -216,3 +216,286 @@ int main(){
         }
     }
 }
+
+
+OUTPUT :
+
+
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 1
+Enter number of nodes: 3
+30
+1
+13
+
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 2
+23
+
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 8
+23 30 1 13
+
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 3
+34
+
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 8
+23 30 1 13 34
+
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 4
+Enter position: 3
+Enter element: 12
+
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 8
+23 30 12 1 13 34
+
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 5
+Deleted element is 23
+
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 8
+30 12 1 13 34
+
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 6
+Deleted element is 34
+
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 8
+30 12 1 13
+    
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 7
+Enter position: 2
+Enter element: 12
+    
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 8
+30 1 13 
+
+
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 9
+
+13
+1
+30
+
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 10
+3
+Element not found
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 10
+13
+Element found at position 3
+    
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 11
+1 13 30
+    
+1-create
+2-insert_begin
+3-insert_end
+4-insert_pos
+5-delete_begin
+6-delete_end
+7-delete_pos
+8- display
+9-reverse_display
+10-searching
+11-sorting
+12-exit
+Enter your choice: 12
