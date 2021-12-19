@@ -18,19 +18,40 @@ int linear_Search(int n,int a[30],int ele){
 int main(){
      int a[30],ele,i,n;
      int x;
-     printf("Enter the size of the array");
+     printf("Enter the size of the array : ");
      scanf("%d",&n);
      for(i = 0;i < n;i++){
             scanf("%d",&a[i]);
             }
-    printf("Enter the element to be searched");
+    printf("Enter the element to be searched : ");
     scanf("%d",&ele);
     x = linear_Search(n,a,ele);
     if(x == -1){
         printf("Element is not found");
         }
     else{
-        printf("Element is found at %d position",x);
+        printf("Element is found at position %d",x);
         }
-        }
+}
+
+OUTPUT : 
+
+Enter the size of the array : 6
+2
+12
+54
+31
+77
+4
+Enter the element to be searched : 2
+Element is found at position 0
+
+Enter the size of the array : 5
+61
+94
+32
+12
+7
+Enter the element to be searched : 36
+Element is not found
                                                  
