@@ -1,1 +1,209 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct node{
+     int data;
+     struct node*link;
+};
+struct node* front = NULL ;
+struct node* rear = NULL;
+struct node* cur;
 
+void enqueue()
+{
+    cur = (struct node*)malloc(sizeof(struct node));
+    printf("Enter element : ");
+    scanf("%d",&cur->data);
+    cur->link = NULL;
+    if (front == NULL){
+        rear = cur;
+        front = cur;
+    }
+    else{
+        rear -> link = cur;
+        rear = cur;
+    }
+}
+void dequeue()
+{
+    cur = (struct node*)malloc(sizeof(struct node));
+    if(front == NULL){
+        printf("Queue underflow\n");
+    }
+    else if(front != rear){
+
+        cur = front;
+        front = front->link;
+        printf("Deleted element is %d\n",cur->data);
+        free(cur);
+    }
+    else{
+        printf("Deleted element is %d\n",front -> data);
+        front = NULL;
+        rear = NULL;
+    }
+}
+void display(){
+    cur = front;
+    if (front == NULL){
+        printf("Queue is empty");
+    }
+    else{
+        while(cur!= NULL){
+            printf("%d\n",cur->data);
+            cur = cur->link;
+        }
+
+    }
+}
+int main()
+{
+    int ch;
+    while(1)
+    {
+        printf("\n 1-Enqueue\n2-Dequeue\n3-Display\n4-Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d",&ch);
+
+        switch(ch)
+        {
+            case 1:
+                enqueue();
+                break;
+
+            case 2:
+                dequeue();
+                break;
+            case 3:
+                display();
+                break;
+            case 4:
+                exit(0);
+
+        }
+    }
+}
+
+OUTPUT : 
+
+1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 1
+Enter element : 23
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 1
+Enter element : 56
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 1
+Enter element : 34
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 1
+Enter element : 75
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 1
+Enter element : 12
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 3
+23
+56
+34
+75
+12
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 2
+Deleted element is 23
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 3
+56
+34
+75
+12
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 2
+Deleted element is 56
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 3
+34
+75
+12
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 1
+Enter element : 34
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 3
+34
+75
+12
+34
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 1
+Enter element : 48
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 3
+34
+75
+12
+34
+48
+
+ 1-Enqueue
+2-Dequeue
+3-Display
+4-Exit
+Enter your choice: 4
+
+Process returned 0 (0x0)   execution time : 80.115 s
+Press any key to continue.
