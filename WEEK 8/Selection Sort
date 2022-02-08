@@ -1,0 +1,38 @@
+#include <stdio.h>
+int main()
+{
+    int a[100], n, i, j, temp;
+    printf("Enter the total Number of Elements  :  ");
+    scanf("%d", &n);
+    printf("Enter the Array Elements  :  ");
+    for(i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    for(i = 0; i < n; i++) {
+        for(j = i + 1; j < n; j++) {
+            if(a[i] > a[j]) {
+                temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
+        }
+    }
+    printf("\n Elements after Selection Sort: ");
+    for(i = 0; i < n; i++)  {
+        printf(" %d ", a[i]);
+    }
+    printf("\n");
+    return 0;
+}
+
+OUTPUT:
+Enter number of Elements :  5
+Enter the Array Elements :  12
+34
+7
+89
+2
+Elements after Bubble Sort :  2  7  12  34  89
+
+Process returned 0 (0x0)   execution time : 18.534 s
+Press any key to continue.
