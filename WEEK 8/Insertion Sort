@@ -39,7 +39,7 @@ Enter the Array Elements :  43
 91
 23
 4
-Elements after Bubble Sort :  4  5  23  25  43  61  91  99
+Elements after  Insertion Sort :  4  5  23  25  43  61  91  99
 
 Process returned 0 (0x0)   execution time : 11.532 s
 Press any key to continue.
