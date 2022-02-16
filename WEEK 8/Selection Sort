@@ -32,7 +32,7 @@ Enter the Array Elements :  12
 7
 89
 2
-Elements after Bubble Sort :  2  7  12  34  89
+Elements after Selection Sort :  2  7  12  34  89
 
 Process returned 0 (0x0)   execution time : 18.534 s
 Press any key to continue.
